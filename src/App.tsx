@@ -8,7 +8,7 @@ import { DataContextprovider } from "./Context/DataContext";
 const App = () => {
   return (
     <DataContextprovider>
-      <div>
+      <div className="container">
         <Sidenav />
         <main>
           <Header />
