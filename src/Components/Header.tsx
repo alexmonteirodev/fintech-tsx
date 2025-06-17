@@ -1,13 +1,17 @@
 import React from "react";
 import { useData } from "../Context/DataContext";
 import DateRange from "./DateRange";
+import Meses from "./Meses";
 
 const Header = () => {
   const { data } = useData();
   return (
-    <div>
-      <DateRange />
-    </div>
+    <header className="mb">
+      <div className="mb">
+        <DateRange />
+      </div>
+      <Meses />
+    </header>
   );
 };
 
